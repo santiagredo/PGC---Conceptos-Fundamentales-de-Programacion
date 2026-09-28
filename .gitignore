@@ -29,4 +29,5 @@ bin/
 .DS_Store
 
 *.csv
-*.txt
+ventas_*.txt
+*.class

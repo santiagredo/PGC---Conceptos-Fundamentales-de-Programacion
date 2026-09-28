@@ -30,8 +30,7 @@ public class GenerateInfoFiles {
             List<SalesmanData> salesmen = createSalesManInfoFile(salesmenCount);
 
             for (SalesmanData sm : salesmen) {
-                String fileName = "ventas_" + sm.getId() + ".txt";
-                createSalesMenFile(maxSalesPerFile, fileName, sm.getId());
+                createSalesMenFile(maxSalesPerFile, "ventas_" + sm.getId() + ".txt", sm.getDocType(), sm.getId());
             }
 
             System.out.println("Generación de archivos completada exitosamente.");
@@ -41,16 +40,18 @@ public class GenerateInfoFiles {
     }
 
     public static void createSalesMenFile(int randomSalesCount, String name, long id) throws IOException {
+        createSalesMenFile(randomSalesCount, name, DOC_TYPES.get(RANDOM.nextInt(DOC_TYPES.size())), id);
+    }
+
+    private static void createSalesMenFile(int randomSalesCount, String name, String docType, long id)
+            throws IOException {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(new File(name)))) {
-            String docType = DOC_TYPES.get(RANDOM.nextInt(DOC_TYPES.size()));
             writer.write(docType + DELIMITER + id);
             writer.newLine();
 
             int salesCount = RANDOM.nextInt(randomSalesCount) + 1;
             for (int i = 0; i < salesCount; i++) {
-                int productId = RANDOM.nextInt(10) + 1;
-                int quantity = RANDOM.nextInt(20) + 1;
-                writer.write(productId + DELIMITER + quantity + DELIMITER);
+                writer.write((RANDOM.nextInt(10) + 1) + DELIMITER + (RANDOM.nextInt(20) + 1) + DELIMITER);
                 writer.newLine();
             }
         }

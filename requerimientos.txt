@@ -1,0 +1,25 @@
+El programa debe crear un archivo con la información de todos los vendedores, de a uno por línea. Al frente del nombre de cada vendedor, separado por punto y coma, debe estar la cantidad de dinero que recaudó según los archivos. El archivo debe estar ordenado por cantidad de dinero, de mayor a menor, de a un vendedor por línea. Es básicamente un archivo de reporte de ventas de los vendedores, del mejor al peor; un archivo CSV
+
+- main.java (genera reporte_vendedores.csv)
+
+
+El programa debe crear un archivo con la información de los productos vendidos por cantidad, ordenados en forma descendente. Deben ir el nombre y el precio, separados por punto y coma, y de a un producto por línea. Es básicamente un archivo plano CSV. 
+
+- main.java (genera reporte_productos.csv)
+
+
+Para propósitos de prueba, se deben crear métodos de generación de archivos de prueba para el programa en cuestión. Entre estos métodos deben estar al menos:
+
+   a. createSalesMenFile( int randomSalesCount, String name, long id): dada una cantidad, un nombre y un id, crea un archivo pseudoaleatorio de ventas de un vendedor con el nombre y el id dados. 
+   
+   - GenerateInfoFiles.java (genera ventas_<id>.txt)
+
+
+   b. createProductsFile( int productsCount ): crea un archivo con información pseudoaleatoria de productos, con los datos de productsCount productos. 
+   
+   - GenerateInfoFiles.java (genera productos.csv)
+
+
+   c. createSalesManInfoFile( int salesmanCount ): crea un archivo con información de salesmanCount vendedores; el número de estos según lo indique el argumento entero. La información debe ser generada de manera pseudoaleatoria y ser coherente, es decir, los nombres y apellidos pueden ser extraídos de listas de nombres reales de personas. 
+   
+   - GenerateInfoFiles.java (genera vendedores.csv)
