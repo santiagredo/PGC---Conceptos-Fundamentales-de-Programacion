@@ -9,9 +9,6 @@ de programar:
 - Aprendimos a manejar archivos de texto e E/S avanzadas en Java (Java NIO y I/O), 
   procesando archivos CSV delimitados por punto y coma y aplicando limpieza de marcas 
   invisibles de formato (BOM de UTF-8).
-- Implementamos **serialización de objetos** (Serializable, ObjectOutputStream y 
-  `ObjectInputStream`) para crear respaldos binarios (.dat) eficientes de los catalogos 
-  y acumulados de productos y vendedores.
 - Usamos estructuras de datos como Map (HashMap) y `List` (`ArrayList) para asociar 
   e indexar información rápidamente, acumulando ventas provenientes de múltiples 
   archivos por vendedor y ordenando reportes con expresiones Lambda y `Comparators`.
@@ -23,12 +20,12 @@ de programar:
 
 Todo lo aprendido durante estas semanas tiene una aplicación muy directa en el mundo 
 laboral:
-- Automatización de procesos de integración y transformación de datos (ETL) para 
-  consolidar información contable o de ventas proveniente de múltiples fuentes.
-- Creación de mecanismos de **persistencia de datos de alto rendimiento** mediante 
-  serialización binaria para sistemas en producción.
-- Desarrollo de software backend capaz de procesar volúmenes de datos de forma 
-  autónoma, segura y con tolerancia a fallos.
+- Automatización de tareas de integración de datos (ETL) para consolidar y procesar 
+  información que viene de diferentes áreas o sistemas.
+- Creación de herramientas automáticas para generar reportes contables, ventas o 
+  control de inventarios de forma rápida y sin errores manuales.
+- Desarrollo de software backend capaz de procesar volúmenes altos de datos de forma 
+  eficiente y segura.
 
 3. DIFICULTADES PRESENTADAS DURANTE EL DESARROLLO DEL PROYECTO
 
